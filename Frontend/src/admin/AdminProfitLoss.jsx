@@ -19,7 +19,7 @@ export default function AdminProfitLoss() {
         }
 
         const res = await axios.get(
-          "http://localhost:5000/api/orders/profit-loss",
+          "http://snaeeats.onrender.com//api/orders/profit-loss",
           {
             headers: { Authorization: `Bearer ${token}` }
           }

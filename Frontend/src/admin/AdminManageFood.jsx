@@ -11,7 +11,7 @@ export default function AdminManageFood() {
 
   const fetchFoods = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/menu");
+      const res = await axios.get("https://snaeeats.onrender.com//api/menu");
       setFoods(res.data || []);
     } catch (err) {
       alert("Error fetching food list");
@@ -26,7 +26,7 @@ export default function AdminManageFood() {
     if (!window.confirm("Delete this food item?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/menu/admin/${id}`, {
+      await axios.delete(`https://snaeeats.onrender.com//api/menu/admin/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchFoods();
@@ -40,7 +40,7 @@ export default function AdminManageFood() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/menu/admin/${id}`,
+        `https://snaeeats.onrender.com//api/menu/admin/${id}`,
         { price: Number(editPrice) },
         { headers: { Authorization: `Bearer ${token}` } }
       );

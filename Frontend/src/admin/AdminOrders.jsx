@@ -10,7 +10,7 @@ export default function AdminOrders() {
   const fetchOrders = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/orders/admin/all",
+        "https://snaeeats.onrender.com//api/orders/admin/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -31,7 +31,7 @@ export default function AdminOrders() {
   const updateStatus = async (id) => {
   try {
     await axios.put(
-      `http://localhost:5000/api/orders/admin/${id}`,
+      `https://snaeeats.onrender.com//api/orders/admin/${id}`,
       { status: "Preparing" },   // 🔥 MUST SEND
       {
         headers: {
