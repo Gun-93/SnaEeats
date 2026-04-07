@@ -12,14 +12,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-const cors = require("cors");
+
 
 
 
 app.use(cors());   // ✅ YE ADD / REPLACE KAR
 
 app.use(express.json());
-
+/*
 app.use(
   cors({
     origin: ["http://localhost:5173", "http://localhost:3000","https://snnapeatss.netlify.app"],
@@ -27,6 +27,7 @@ app.use(
     credentials: true,
   })
 );
+*/
 app.use("/uploads", express.static("uploads"));
 
 
