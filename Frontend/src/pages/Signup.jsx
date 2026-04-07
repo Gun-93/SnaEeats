@@ -41,7 +41,7 @@ export default function Signup() {
     }
 
     try {
-      await axios.post("http://snaeeats.onrender.com/api/auth/signup", {
+      await axios.post("https://snaeeats.onrender.com/api/auth/signup", {
         name,
         email,
         password,
