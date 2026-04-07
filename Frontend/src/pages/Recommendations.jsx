@@ -395,7 +395,7 @@ export default function Recommendations({ onAddToCart }) {
   useEffect(() => {
     const fetchFoods = async () => {
       try {
-        const res = axios.get("https://snaeeats.onrender.com/api/recommendations", {
+        const res =await axios.get("https://snaeeats.onrender.com/api/recommendations", {
 
           params: {
             search,
