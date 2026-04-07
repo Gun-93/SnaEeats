@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdLocationOn, MdSearch } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-
+import bg from "../assets/food.jpg";
 export default function Hero() {
   const navigate = useNavigate();
 
@@ -48,7 +48,7 @@ export default function Hero() {
   return (
     <section
       className="relative flex items-center justify-center min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url("/src/assets/food.jpg")` }}
+      style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
