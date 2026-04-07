@@ -74,7 +74,7 @@ export default function Menu({ onAddToCart }) {
   /* 🔥 FETCH FROM BACKEND (ADDED) */
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/menu")
+      .get("http://snaeeats.onrender.com/api/menu")
       .then((res) => {
         if (res.data && res.data.length > 0) {
           setFoods(res.data);

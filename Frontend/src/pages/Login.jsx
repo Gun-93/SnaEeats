@@ -11,7 +11,7 @@ export default function Login({ setUser }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+      const res = await axios.post("http://snaeeats.onrender.com/api/auth/login", { email, password });
       // ✅ SAVE USER + TOKEN
     localStorage.setItem("token", res.data.token);
     localStorage.setItem("user", JSON.stringify(res.data));

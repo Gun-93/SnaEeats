@@ -395,7 +395,7 @@ export default function Recommendations({ onAddToCart }) {
   useEffect(() => {
     const fetchFoods = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/recommendations", {
+        const res = axios.get("https://snaeeats.onrender.com/api/recommendations", {
 
           params: {
             search,
@@ -458,7 +458,7 @@ function FoodGrid({ foods, onAddToCart }) {
       ? food.image
       : food.image?.startsWith("/images")
       ? food.image
-      : `http://localhost:5000/uploads/${food.image}`
+      : `https://snaeeats.onrender.com/uploads/${food.image}`
   }
   alt={food.name}
   className="w-full h-40 object-cover"

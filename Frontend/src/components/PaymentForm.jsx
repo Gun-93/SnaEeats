@@ -37,7 +37,7 @@ export default function PaymentForm() {
 
       };
 
-    await axios.post("http://localhost:5000/api/orders", orderData);
+    await axios.post("http://snaeeats.onrender.com/api/orders", orderData);
 
     // ✅ CLEANUP
     localStorage.removeItem("cartItems");
