@@ -398,13 +398,13 @@ export default function Recommendations({ onAddToCart }) {
         const res =await axios.get("https://snaeeats.onrender.com/api/recommendations", {
 
           params: {
-            search,
-            calories,
-            dietType,
-            protein,
-            fat,
-            sugar,
-          },
+  ...(search && { search }),
+  ...(calories && { calories }),
+  ...(dietType && { dietType }),
+  ...(protein && { protein }),
+  ...(fat && { fat }),
+  ...(sugar && { sugar }),
+},
         });
        
         setFoods(res.data);
