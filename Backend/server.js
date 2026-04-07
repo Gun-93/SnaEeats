@@ -11,7 +11,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// ================= MIDDLEWARE =================
+const express = require("express");
+const cors = require("cors");
+
+
+
+app.use(cors());   // ✅ YE ADD / REPLACE KAR
+
 app.use(express.json());
 
 app.use(
