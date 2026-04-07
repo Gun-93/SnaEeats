@@ -14,6 +14,7 @@ export default function AdminManageFood() {
       const res = await axios.get("https://snaeeats.onrender.com//api/menu");
       setFoods(res.data || []);
     } catch (err) {
+      console.log(err); 
       alert("Error fetching food list");
     }
   };
