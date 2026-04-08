@@ -39,7 +39,7 @@ app.use("/api/menu", menuRoutes);
 
 // ✅ KEEP BOTH (VERY IMPORTANT)
 app.use("/api/orders", orderRoutes); // correct
-app.use("/api/order", orderRoutes);  // backward compatibility (ADD)
+
 
 
 // 🔥 RECOMMENDATION ROUTE (ADD THIS)

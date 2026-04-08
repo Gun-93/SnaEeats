@@ -10,7 +10,7 @@ export default function AdminOrders() {
   const fetchOrders = async () => {
     try {
       const res = await axios.get(
-        "https://snaeeats.onrender.com//api/orders/admin/all",
+        "https://snaeeats.onrender.com/api/orders/admin/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
