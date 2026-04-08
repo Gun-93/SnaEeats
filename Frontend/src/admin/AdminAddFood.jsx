@@ -44,7 +44,7 @@ export default function AdminAddFood() {
       formData.append("image", image);
 
       await axios.post(
-        "http://localhost:5000/api/menu/admin/add",
+        "https://localhost:5000/api/menu/admin/add",
         formData,
         {
           headers: {

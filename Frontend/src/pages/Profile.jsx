@@ -12,7 +12,7 @@ export default function Profile() {
   const fetchOrders = async () => {
     try {
       const res = await axios.get(
-        `http://snaeeats.onrender.com/api/orders/${user._id}`
+        `https://snaeeats.onrender.com/api/orders/${user._id}`
       );
       setOrders(res.data);
     } catch {
